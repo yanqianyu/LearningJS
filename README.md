@@ -19,3 +19,7 @@
 - [ ] setInterval
 - [ ] transform: rotate, transform-origin
 - [ ] 秒针角度骤变问题
+
+3. Day 3: CSS Variables
+- [ ] 知识盲区 全局CSS变量
+- [ ] CSS variable

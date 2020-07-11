@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+  <style>
+
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+      text-align: center;
+      background: #193549;
+      color: white;
+      font-family: 'helvetica neue', sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }
+
+    .controls {
+      margin-bottom: 50px;
+    }
+
+    input {
+      width: 100px;
+    }
+  </style>
+
+  <script>
+      function init() {
+          var input = document.querySelector('.controls #spacing');
+          var suffix = document.getElementById('spacing').dataset.sizing || ' ';
+          document.getElementsByTagName('img')[0].style.setProperty('padding', input.value + suffix);
+
+          var input = document.querySelector('.controls #base');
+          var suffix = document.getElementById('base').dataset.sizing || ' ';
+          document.getElementsByTagName('img')[0].style.setProperty('background', input.value + suffix);
+          document.getElementsByClassName('hl')[0].style.setProperty('color', input.value + suffix);
+
+          var input = document.querySelector('.controls #blur');
+          var suffix = document.getElementById('blur').dataset.sizing || ' ';
+          document.getElementsByTagName('img')[0].style.setProperty('filter', `blur(${input.value}${suffix})`);
+      }
+      
+      init();
+
+      var spacingInput = document.querySelector('.controls #spacing');
+
+      spacingInput.addEventListener('mousemove', function(){
+          updateData('spacing', 'padding', spacingInput.value);
+      });
+      spacingInput.addEventListener('change', function(){
+          updateData('spacing', 'padding', spacingInput.value);
+      });
+
+      function updateData(name, property, value) {
+          const suffix = document.getElementById(name).dataset.sizing || ' ';
+          if (name === 'blur') {
+            document.getElementsByTagName('img')[0].style.setProperty(property, `blur(${value}${suffix})`);
+          }
+          else {
+              document.getElementsByTagName('img')[0].style.setProperty(property, value + suffix);
+          }
+
+          if(name === 'base') {
+            document.getElementsByClassName('hl')[0].style.setProperty('color', value + suffix);
+          }
+      }
+
+      var blurInput = document.querySelector('.controls #blur');
+
+      blurInput.addEventListener('mousemove', function(){
+          updateData('blur', 'filter', blurInput.value);
+      });
+      blurInput.addEventListener('change', function(){
+          updateData('blur', 'filter', blurInput.value);
+      });
+
+
+      var colorInput = document.querySelector('.controls #base');
+      colorInput.addEventListener('mousemove', function(){
+          updateData('base', 'background', colorInput.value);
+      });
+      colorInput.addEventListener('change', function(){
+          updateData('base', 'background', colorInput.value);
+      });
+
+  </script>
+
+</body>
+</html>
