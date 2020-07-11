@@ -6,3 +6,11 @@
 - [ ] 几个知识点的加深理解
 - [ ] var that = this的作用（闭包，this指针）
 - [ ] 目前还有几个常量不是很理解，玩起来速度有点快
+
+## JavaScripts30
+1. Day 1: JavaScript Drum Kit
+- [ ] HTML data-* 属性
+- [ ] 模板自变量
+- [ ] animation, 在transition动画结束后触发transitionend
+- [ ] forEach 和 箭头函数 
+- [x] 播放音乐前重制音乐，否则连续点击时，会出现只有第一次有声音，第二三次没有声音的情况
