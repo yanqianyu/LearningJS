@@ -23,3 +23,5 @@
 3. Day 3: CSS Variables
 - [ ] 知识盲区 全局CSS变量
 - [ ] CSS variable
+
+4. Day 4: Array Cardio Day 1
