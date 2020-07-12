@@ -25,3 +25,11 @@
 - [ ] CSS variable
 
 4. Day 4: Array Cardio Day 1
+- [ ] Array.prototype下的一系列用法
+
+5. Day 5: Flex Panel Gallery
+- [ ] flex布局
+- [ ] css first child
+- [ ] toggle
+- [ ] text.html中的效果会出现多个div同时放大的情况 => 在触发open之前先清除
+- [ ] open触发的动画结束后触发的事件名称在safari和chrome上不一样
