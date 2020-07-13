@@ -33,3 +33,8 @@
 - [ ] toggle
 - [ ] text.html中的效果会出现多个div同时放大的情况 => 在触发open之前先清除
 - [ ] open触发的动画结束后触发的事件名称在safari和chrome上不一样
+
+6. Day 6: Type Ahead
+- [ ] fetch api
+- [ ] ...运算符
+- [ ] regexp正则表达式
