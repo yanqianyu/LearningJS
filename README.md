@@ -40,3 +40,13 @@
 - [ ] regexp正则表达式
 
 7. Day 7: Array Cardio Day 2
+- [ ] some 和 every
+
+8. Day 8: Fun With HTML5 Canvas
+- [ ] Canvas
+- 使用canvas进行画线，使用 beginPath()开始绘制新的路径，使用 moveTo()移动画笔至路径的起始点，使用lineTo标识路径的终点，使用 stroke() 方法真正-地画线。
+- ctx.beginPath();是 Canvas 2D API 通过清空子路径列表开始一个新路径的方法。 当你想创建一个新的路径时，调用此方法。
+- ctx.moveTo(x, y);是 Canvas 2D API 将一个新的子路径的起始点移动到(x，y)坐标的方法。
+- ctx.lineTo(x, y);是 Canvas 2D API 使用直线连接子路径的终点到x，y坐标的方法（并不会真正地绘制）。
+- ctx.stroke();是 Canvas 2D API 使用非零环绕规则，根据当前的画线样式，绘制当前或已经存在的路径的方法。
+- ctx.closePath();是 Canvas 2D API 将笔点返回到当前子路径起始点的方法。它尝试从当前点到起始点绘制一条直线。 如果图形已经是封闭的或者只有一个点，那么此方法不会做任何操作
