@@ -55,4 +55,8 @@
 - [ ] console的一些用法
 
 10. Day 10: Hold Shift and Check Checkboxes
-- [ ] 
+- [ ] 选取的逻辑
+- [ ] slice
+
+11. Day 11: Custom Video Player
+- [ ] video的相关属性
