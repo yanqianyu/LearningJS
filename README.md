@@ -60,3 +60,13 @@
 
 11. Day 11: Custom Video Player
 - [ ] video的相关属性
+
+12. Day 12: Key Sequence Detection
+- [ ] window对象
+
+13. Day 13: Slide in on Scroll
+- [ ] 防抖和节流
+- [ ] call
+- [ ] apply
+- [ ] window.scrollY表示浏览器当前的在Y轴上滚动的距离（未滚动时值为0）
+- [ ] window.innerHeight表示浏览器的内部视图窗口的高度值
