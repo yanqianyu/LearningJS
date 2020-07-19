@@ -70,3 +70,9 @@
 - [ ] apply
 - [ ] window.scrollY表示浏览器当前的在Y轴上滚动的距离（未滚动时值为0）
 - [ ] window.innerHeight表示浏览器的内部视图窗口的高度值
+
+14. Day 14: JavaScript References VS Copying
+- [ ] 变量引用和复制
+- [ ] 基本类型按值操作，而对象类型由引用操作
+- [ ] 基本类型有String Number Boolean Null Undefined
+- [ ] 如果复制的对象也包含对象，那么只能复制到第一层。 任何比第一层更深的值仍然是原对象的引用 -> 需要深拷贝，或者转成JSON字符串
