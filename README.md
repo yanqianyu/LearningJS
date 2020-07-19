@@ -76,3 +76,11 @@
 - [ ] 基本类型按值操作，而对象类型由引用操作
 - [ ] 基本类型有String Number Boolean Null Undefined
 - [ ] 如果复制的对象也包含对象，那么只能复制到第一层。 任何比第一层更深的值仍然是原对象的引用 -> 需要深拷贝，或者转成JSON字符串
+
+15. Day 15: LocalStorage
+- [ ] localStorage的常用API：
+localStorage.setItem(‘key’,value); -> 设置本地缓存，以key-value的形式
+localStorage.getItem(‘key’); -> 根据参数key取得本地缓存中对应的值
+localStorage.clear(); -> 清空本地的缓存
+localStorage.removeItem(‘key’); -> 删除key所对应的那一条本地缓存
+- [ ] localStorage中只存储字符串
