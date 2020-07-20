@@ -84,3 +84,7 @@ localStorage.getItem(‘key’); -> 根据参数key取得本地缓存中对应�
 localStorage.clear(); -> 清空本地的缓存
 localStorage.removeItem(‘key’); -> 删除key所对应的那一条本地缓存
 - [ ] localStorage中只存储字符串
+
+16. Day 16: Mouse Move Shadow
+- [ ] 鼠标点击事件的几个属性实例：clientX，clientY， pageX，pageY，offsetX，offsetY，screenX，screenY
+- [ ] 页面元素offset的几个属性实例：offsetParent，offsetTop，offsetLeft，offsetHeight，offsetWidth
