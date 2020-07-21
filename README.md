@@ -88,3 +88,6 @@ localStorage.removeItem(‘key’); -> 删除key所对应的那一条本地缓�
 16. Day 16: Mouse Move Shadow
 - [ ] 鼠标点击事件的几个属性实例：clientX，clientY， pageX，pageY，offsetX，offsetY，screenX，screenY
 - [ ] 页面元素offset的几个属性实例：offsetParent，offsetTop，offsetLeft，offsetHeight，offsetWidth
+
+17.Day 17: Sort Without Articles
+- [ ] Array.prototype.sort()
