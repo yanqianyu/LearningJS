@@ -100,3 +100,6 @@ localStorage.removeItem(‘key’); -> 删除key所对应的那一条本地缓�
 
 20. Day 20
 - [ ] webkitSpeechRecognition
+
+22. Day 22
+- [ ] getBoundingClientRect
