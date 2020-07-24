@@ -89,5 +89,14 @@ localStorage.removeItem(‘key’); -> 删除key所对应的那一条本地缓�
 - [ ] 鼠标点击事件的几个属性实例：clientX，clientY， pageX，pageY，offsetX，offsetY，screenX，screenY
 - [ ] 页面元素offset的几个属性实例：offsetParent，offsetTop，offsetLeft，offsetHeight，offsetWidth
 
-17.Day 17: Sort Without Articles
+17. Day 17: Sort Without Articles
 - [ ] Array.prototype.sort()
+
+18. Day 18: Adding Up Times with Reduce
+- [ ] document.querySelectorAll()返回的是nodeList类型
+
+19. Day 19
+- [ ] navigator.getUserMedia
+
+20. Day 20
+- [ ] webkitSpeechRecognition
