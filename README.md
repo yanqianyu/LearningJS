@@ -119,3 +119,6 @@ node.onclick = callback.bind(null, args);
 // 箭头函数创建匿名函数，执行带参的回调函数
 node.onclick = () => callback(args);
 ```
+
+25. Dat 25
+- [ ] DOM事件机制 事件捕获，事件冒泡，单次执行事件
