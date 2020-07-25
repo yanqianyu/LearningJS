@@ -103,3 +103,19 @@ localStorage.removeItem(‘key’); -> 删除key所对应的那一条本地缓�
 
 22. Day 22
 - [ ] getBoundingClientRect
+
+23. Day 23
+- [ ] SpeechSynthesis
+- [ ] 事件监听绑定函数需要参数的时候的几种做法：
+```
+// 创建匿名函数，执行带参的回调函数
+node.onclick = function() {
+    callback(args);
+}
+
+// 为回调函数绑定参数
+node.onclick = callback.bind(null, args);
+
+// 箭头函数创建匿名函数，执行带参的回调函数
+node.onclick = () => callback(args);
+```
