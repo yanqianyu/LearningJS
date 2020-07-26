@@ -227,6 +227,7 @@
 
     function mouseEnter() {
         this.classList.add('trigger-enter');
+        // 在选项中停留了150ms 才添加trigger-enter-active
         setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
         background.classList.add('open');
 
@@ -251,7 +252,7 @@
     menu.forEach(ele => ele.addEventListener('mouseenter', mouseEnter));
     menu.forEach(ele => ele.addEventListener('mouseleave', mouseLeave));
 
-    
+
 </script>
 </body>
 </html>
