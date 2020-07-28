@@ -9,6 +9,15 @@ var server = net.createServer(function (conn) {
     conn.write('please write your name and press enter:');
     count++;
     var nickname;
+
+    function broadcast(msg, exceptMyself) {
+        for (var i in users) {
+            if (!exceptMyself || i != nickname) {
+                users[i].write(msg);
+            }
+        }
+    }
+
     conn.on('data', function(data) {
         data = data.replace('\r\n', '');
         if (!nickname) {
@@ -18,18 +27,11 @@ var server = net.createServer(function (conn) {
             } else {
                 nickname = data;
                 users[nickname] = conn;
-                for (var i in users) {
-                    users[i].write(nickname + ' joined the room\n');
-                }
+                broadcast(nickname + ' joined the room\n');
             }
         } else {
             // 聊天信息
-            for (var i in users) {
-                // 消息发给除自己以外的其他客户端
-                if (i != nickname) {
-                    users[i].write(nickname + ' :' + data + '\n');
-                }
-            }
+            broadcast(nickname + ' :' + data + '\n');
         }
     })
     // 断开连接
@@ -37,6 +39,8 @@ var server = net.createServer(function (conn) {
         count--;
         // 清楚users数组中对应的元素
         delete users[nickname];
+        // 广播
+        broadcast(nickname + ' left the room');
     });
 });
 
