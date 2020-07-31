@@ -1,0 +1,6 @@
+{
+    "name": "connect2",
+    "dependencies": {
+        "connect": "1.8.1"
+    }
+}
