@@ -1,0 +1,6 @@
+{
+    "name": "middleware",
+    "dependencies": {
+        "connect": "1.8.7"
+    }
+}
