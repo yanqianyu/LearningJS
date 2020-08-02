@@ -1,0 +1,7 @@
+{
+    "name": "express-tweet",
+    "dependencies": {
+        "express": "4.17.0",
+        "ejs": "^1.0.0"
+    }
+}
