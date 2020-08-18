@@ -1,0 +1,38 @@
+$count : 32;
+
+@function randomNum($max, $min: 0, $u: 1) {
+    @return ($min + random($max)) * $u;
+}
+
+@function randomColor() {
+    @return rgb(randomNum(255), randomNum(255), randomNum(255));
+}
+
+.container {
+    column-count: 4;
+    column-gap: .5vw;
+    padding-top: .5vw;
+}
+
+.item {
+    position: relative;
+    width: 24vw;
+    margin-bottom: 1vw;
+    break-inside: avoid;
+}
+
+@for $i from 1 to $count + 1 {
+    .item:nth-child(#{$i}) {
+        height: #{randomNum(300, 50)}px;
+        background: randomColor();
+        &::after {
+            content: "#{$i}";
+            position: absolute;
+            color: #fff;
+            font-size: 24px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

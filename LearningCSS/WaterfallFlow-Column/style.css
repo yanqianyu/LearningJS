@@ -1,0 +1,396 @@
+.container {
+  column-count: 4;
+  column-gap: .5vw;
+  padding-top: .5vw; }
+
+.item {
+  position: relative;
+  width: 24vw;
+  margin-bottom: 1vw;
+  break-inside: avoid; }
+
+.item:nth-child(1) {
+  height: 137px;
+  background: #7a0e6e; }
+  .item:nth-child(1)::after {
+    content: "1";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(2) {
+  height: 321px;
+  background: #4806ea; }
+  .item:nth-child(2)::after {
+    content: "2";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(3) {
+  height: 218px;
+  background: #e9bda8; }
+  .item:nth-child(3)::after {
+    content: "3";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(4) {
+  height: 121px;
+  background: #b56ecc; }
+  .item:nth-child(4)::after {
+    content: "4";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(5) {
+  height: 309px;
+  background: #82ce1a; }
+  .item:nth-child(5)::after {
+    content: "5";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(6) {
+  height: 190px;
+  background: #7c5b84; }
+  .item:nth-child(6)::after {
+    content: "6";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(7) {
+  height: 160px;
+  background: #9569b7; }
+  .item:nth-child(7)::after {
+    content: "7";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(8) {
+  height: 185px;
+  background: #927276; }
+  .item:nth-child(8)::after {
+    content: "8";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(9) {
+  height: 134px;
+  background: #60bc1e; }
+  .item:nth-child(9)::after {
+    content: "9";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(10) {
+  height: 193px;
+  background: #9bf686; }
+  .item:nth-child(10)::after {
+    content: "10";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(11) {
+  height: 204px;
+  background: #4a10fb; }
+  .item:nth-child(11)::after {
+    content: "11";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(12) {
+  height: 228px;
+  background: #887d77; }
+  .item:nth-child(12)::after {
+    content: "12";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(13) {
+  height: 294px;
+  background: #5021c4; }
+  .item:nth-child(13)::after {
+    content: "13";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(14) {
+  height: 65px;
+  background: #e92cec; }
+  .item:nth-child(14)::after {
+    content: "14";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(15) {
+  height: 192px;
+  background: #0f535e; }
+  .item:nth-child(15)::after {
+    content: "15";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(16) {
+  height: 172px;
+  background: #d9823d; }
+  .item:nth-child(16)::after {
+    content: "16";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(17) {
+  height: 251px;
+  background: #e50cc5; }
+  .item:nth-child(17)::after {
+    content: "17";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(18) {
+  height: 231px;
+  background: #646081; }
+  .item:nth-child(18)::after {
+    content: "18";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(19) {
+  height: 175px;
+  background: #ecf62e; }
+  .item:nth-child(19)::after {
+    content: "19";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(20) {
+  height: 273px;
+  background: #03e7f1; }
+  .item:nth-child(20)::after {
+    content: "20";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(21) {
+  height: 262px;
+  background: #766314; }
+  .item:nth-child(21)::after {
+    content: "21";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(22) {
+  height: 324px;
+  background: #ecd6df; }
+  .item:nth-child(22)::after {
+    content: "22";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(23) {
+  height: 205px;
+  background: #ee40b1; }
+  .item:nth-child(23)::after {
+    content: "23";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(24) {
+  height: 217px;
+  background: #60be42; }
+  .item:nth-child(24)::after {
+    content: "24";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(25) {
+  height: 179px;
+  background: #932f7f; }
+  .item:nth-child(25)::after {
+    content: "25";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(26) {
+  height: 270px;
+  background: #aaca05; }
+  .item:nth-child(26)::after {
+    content: "26";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(27) {
+  height: 311px;
+  background: #1a6acb; }
+  .item:nth-child(27)::after {
+    content: "27";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(28) {
+  height: 319px;
+  background: #13bfc8; }
+  .item:nth-child(28)::after {
+    content: "28";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(29) {
+  height: 333px;
+  background: #8842e3; }
+  .item:nth-child(29)::after {
+    content: "29";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(30) {
+  height: 280px;
+  background: #27b356; }
+  .item:nth-child(30)::after {
+    content: "30";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(31) {
+  height: 305px;
+  background: #85b7be; }
+  .item:nth-child(31)::after {
+    content: "31";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.item:nth-child(32) {
+  height: 173px;
+  background: #706866; }
+  .item:nth-child(32)::after {
+    content: "32";
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=style.css.map */
