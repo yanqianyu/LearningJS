@@ -1,0 +1,35 @@
+.container {
+  margin: 20px auto;
+  width: 400px; }
+
+.item {
+  width: 190px;
+  height: 190px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  border-radius: 10px;
+  line-height: 190px;
+  font-size: 32px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  transition: 1s all; }
+
+.flex {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column; }
+  .flex .item:first-child {
+    height: 390px; }
+
+.flex:hover {
+  flex-direction: row; }
+  .flex:hover .item:first-child {
+    height: 190px;
+    width: 390px; }
+
+/*# sourceMappingURL=style.css.map */
