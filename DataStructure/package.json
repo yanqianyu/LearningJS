@@ -1,0 +1,14 @@
+{
+  "name": "js-datastructure",
+  "version": "1.0.0",
+  "description": "a repo for learning data structure in js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yan qianyu",
+  "license": "ISC"
+}
