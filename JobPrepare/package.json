@@ -1,0 +1,14 @@
+{
+  "name": "jobprepare",
+  "version": "1.0.0",
+  "description": "Code practice for job.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Qianyu Yan",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

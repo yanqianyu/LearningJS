@@ -34,7 +34,9 @@ $count: 8;
             .item:nth-child(#{$j}) {
                 height: #{randomNum(300, 50)}px;
                 background: randomColor();
-
+                // 创建伪元素（虚拟元素默认为行内元素） 
+                // 作为已选中元素的最后一个子元素，
+                // 通常会配合content属性来为该元素添加装饰内容
                 &::after {
                     content: "#{$j}";
                     position: absolute;
