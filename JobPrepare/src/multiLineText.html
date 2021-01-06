@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>多行文本省略号显示</title>
+    </head>
+    <body>
+        <div class="text">
+            这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本
+        </div>
+
+        <div class="text2">
+            这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本是文本这是文本这是文本
+        </div>
+
+        <div class="singleLine">这是一个单行文本</div>
+    </body>
+    <style>
+        .text {
+            width: 300px;
+            border: 1px solid red;
+            line-height: 1.4em;
+            height: 4.2em;
+            overflow: hidden;
+            position: relative;
+        }
+        .text::after {
+            content: "...";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .singleLine {
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .text2 {
+            width: 400px;
+            height: 4.2em;
+        }
+    </style>
+    <script>
+        let box = document.getElementsByClassName("text2")[0];
+        let content = box.innerText;
+        let h = box.offsetHeight;
+        for (let i = 0; i < content.length; i++) {
+            box.innerHTML = content.substring(0,i);
+            if(h < box.scrollHeight){
+                box.style.overflow = 'hidden';
+                box.innerHTML = content.substring(0,i-3) + '...';
+                break;
+            }
+        }
+    </script>
+</html>
