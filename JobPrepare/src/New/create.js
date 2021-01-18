@@ -7,7 +7,7 @@ function createFactory() {
     var constructor = [].shift.call(arguments);
     obj.__proto__ = constructor.prototype;
     // 3. 构造函数的this指向obj, 剩下的参数传进去
-    var ret = constructor.apply(obj, arguments);
+    var ret = constructor.apply(obj, arguments); // 对返回值的处理
     return typeof ret === 'object' ? ret: obj;
 }
 
