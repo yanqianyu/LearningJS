@@ -34,6 +34,9 @@ var maximumGain = function(s, x, y) {
         }
         else {
             // 为什么
+            // 如果刚刚是优先消除ab，那么现在就是还剩a个字符a，b个字符b
+            // 现在就可以消除ba了，消减的次数为min(a, b);
+            // 得分min(x, y) * min(a, b)
             let m = Math.min(a, b);
             let n = Math.min(x, y);
             res += n * m;
