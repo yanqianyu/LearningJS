@@ -8,7 +8,7 @@ class UnionFind {
     constructor(n) {
         this.parent = new Array(n).fill(0).map((ele, index) => index);
         this.size = new Array(n).fill(1);
-        this.setCount = n;
+        this.setCount = n; // 连通分量个数
     }
 
     find(index) {
@@ -55,6 +55,8 @@ var maxNumEdgesToRemove = function(n, edges) {
     for (const [t, u, v] of edges) {
         if (t === 3) {
             if (!ufa.union(u, v)) {
+                // u、v在同一个连通分量
+                // 此边可以删除
                 ans += 1;
             } else {
                 ufb.union(u, v);
