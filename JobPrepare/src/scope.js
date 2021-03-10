@@ -1,4 +1,5 @@
-var a = -1;
+// var a = -1;
+let a = 1;
 for (let a = 1; a < 3; a ++) {
     console.log(a);
 }
