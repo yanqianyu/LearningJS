@@ -1,3 +1,6 @@
+/*
+ * js实现一个带并发限制的异步调度器，保证同时运行的任务最多有两个
+ */
 class Scheduler {
     constructor() {
         this.queue = []
