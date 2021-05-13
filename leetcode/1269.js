@@ -4,17 +4,20 @@
  * @return {number}
  */
  var numWays = function(steps, arrLen) {
-    const M = BigInt(1e9+7)
-    let dp = []
-    dp[0] = 1n
-    for (let step = 1; step <= steps; step++) {
-        const tmp = new Array(Math.min(step+1,arrLen)).fill(0n)
-        for (let i = 0; i < tmp.length; i++) {
-            if (i<dp.length) tmp[i] += dp[i]
-            if (i-1>=0) tmp[i] += dp[i-1]
-            if (i+1<dp.length) tmp[i] += dp[i+1]
+    const M = 1000000007;
+    let maxCol = Math.min(arrLen - 1, steps);
+    const dp = new Array(steps + 1).fill(0).map(() => new Array(maxCol + 1).fill(0));
+    dp[0][0] = 1;
+    for(let i = 1; i <= steps; i++) {
+        for(let j = 0; j <= maxCol; j++) {
+            dp[i][j] = dp[i - 1][j];
+            if (j - 1 >= 0) {
+                dp[i][j] = (dp[i][j] + dp[i - 1][j - 1]) % M;
+            }
+            if (j + 1 <= maxCol) {
+                dp[i][j] = (dp[i][j] + dp[i - 1][j + 1]) % M;
+            }
         }
-        dp = tmp
     }
-    return dp[0]%M
+    return dp[steps][0];
 };
