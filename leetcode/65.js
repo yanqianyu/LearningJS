@@ -21,6 +21,7 @@ var isNumber = function(s) {
             case "-": return 1;
             case ".": return 3;
             case "e": return 4;
+            case "E": return 4;
             default: 
                 let code = c.charCodeAt();
                 if (code >= 48 && code <= 57) {
